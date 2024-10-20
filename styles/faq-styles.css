@@ -1,0 +1,98 @@
+.faq{
+    padding: 180px 0 90px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+.faq .decor{
+    display: none;
+}
+.faq h2{
+    margin-bottom: 16px;
+}
+.faq-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+.questions-list li{
+    width: 100%;
+    padding: 17px 0px;
+    border-top: 1px solid rgba(145, 182, 111, 1);
+}
+.question-ttl-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+.question-ttl-btn.active{
+    margin-bottom: 15px;
+}
+.collapse-btn{
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    color: rgba(249, 249, 249, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    position: relative;
+}
+.collapse-btn span{
+    display: block;
+    width: 12px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 1);
+}
+.collapse-btn span:first-child{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+.question-ttl-btn.active .collapse-btn{
+    border: 1px solid var(--main-color);
+    background-color: transparent;
+}
+
+.question-ttl-btn.active .collapse-btn span:first-child{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: var(--main-color);
+}
+
+.question-ttl-btn.active .collapse-btn svg{
+    transform: rotate(180deg);
+    transition: transform 0.3s ease-out;
+}
+.questions-list p{
+    font-weight: 400;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+@media (max-width: 755px){
+    .faq{
+        margin-top: -125px;
+        position: relative;
+    }
+    .faq .decor{
+        position: absolute;
+        right: 0px;
+        top: 125px;
+    }
+    .faq-wrapper{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}

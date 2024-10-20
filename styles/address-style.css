@@ -1,0 +1,31 @@
+.address{
+    padding: 90px 0 26px;
+}
+.address-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 24px;
+}
+.address-item{
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+.address-item p{
+    margin-top: 6px;
+}
+.map{
+    vertical-align: bottom;
+}
+
+@media (max-width: 900px){
+    .address-wrapper{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 600px){
+    .address-wrapper{
+        grid-template-columns: 1fr;
+    }
+    
+}

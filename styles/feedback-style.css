@@ -1,0 +1,79 @@
+.feedback{
+    padding: 60px 0 0;
+    background-repeat: no-repeat;
+    background-position: center 90px;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 24px;
+    row-gap: 24px;
+    margin-top: 20px;
+}
+form input{
+    width: calc(100% / 3 - 20px);
+    padding: 12px 24px;
+    border-radius: 12px;
+    border: 1px solid rgba(221, 225, 232, 1)
+}
+form textarea{
+    width: calc(100% / 2 - 12px);
+    height: 152px;
+    resize: none;
+    padding: 12px 24px;
+    border-radius: 15px;
+    border: 1px solid rgba(221, 225, 232, 1)
+}
+form div{
+    width: calc(100% / 2 - 12px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+form span{
+    max-width: 345px;
+    font-size: 14px;
+    line-height: 19px;
+}
+form a{
+    white-space: nowrap;
+    display: inline-block;
+    color: var(--main-color) !important;
+    border-bottom: 1px solid var(--main-color);
+    line-height: 15px;
+}
+
+
+@media (max-width: 970px){
+    form{
+        column-gap: 10px;
+    }
+    form input{
+        width: calc(100% / 3 - 10px);
+    }
+    form textarea{
+        width: calc(100% / 2 - 10px);
+    }
+    form div{
+        width: calc(100% / 2 - 10px);
+    }
+}
+
+@media (max-width: 700px){
+    form input{
+        width: 100%;
+    }
+    form textarea{
+        width: 100%;
+    }
+    form div{
+        width: 100%;
+    }
+    form span{
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 5px;
+    }
+}

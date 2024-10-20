@@ -1,0 +1,182 @@
+@import url('header-style.css');
+@import url('contacts-style.css');
+@import url('about-style.css');
+@import url('products-style.css');
+@import url('benefits-style.css');
+@import url('news-style.css');
+@import url('faq-styles.css');
+@import url('feedback-style.css');
+@import url('address-style.css');
+@import url('footer-style.css');
+/* -------------------------------------------reset-styles------------------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus, :active{outline: none;}
+a:focus, a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html, body{
+	height: 100%;
+	width: 100%;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea{font-family: inherit;}
+
+input::-ms-clear{display:none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a, a:visited{text-decoration: none; color: inherit;}
+a:hover{text-decoration: none;}
+ul li{list-style-type: none;}
+
+h1,h2, h3, h4, h5, h6{font-style: inherit; cursor:context-menu;}
+svg{flex-shrink: 0;}
+p, span, li{cursor:context-menu;}
+/* -------------------------------------------подключение шрифтов------------------------------------------- */
+
+@font-face {
+    font-family: 'Ponomar Unicode';
+    src: url('../fonts/PonomarUnicode/PonomarUnicode.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* -------------------------------------------main-styles------------------------------------------- */
+:root{
+	--main-color:rgba(63, 94, 35, 1);
+}
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	background-color: #fff;
+	font-family: 'Manrope', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 21.86px;	
+	color: rgba(55, 55, 55, 1);
+}
+
+.no-scroll{
+	overflow: hidden;
+}
+.layout{
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+header{
+	flex-shrink: 0;
+}
+
+main{
+	flex-grow: 1;
+}
+.main{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+}
+footer{
+	background-color: rgba(39, 40, 37, 1);
+	flex-shrink: 0;
+}
+
+.container{
+	max-width: 1230px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+h2{
+	font-family: 'Ponomar Unicode';
+	font-size: 68px;
+	line-height: 96.22px;
+	font-weight: 400;
+	color: rgba(22, 22, 22, 1);
+}
+h2 img{
+	display: none;
+}
+h3{
+	font-family: 'Ponomar Unicode';
+	font-size: 25px;
+	font-weight: 400;
+	line-height: 35.37px;
+	margin-bottom: 20px;
+	color: rgba(22, 22, 22, 1);
+}
+h4{
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 32.78px;	
+	color: rgba(22, 22, 22, 1);
+	margin-bottom: 5px;
+}
+h5{
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 24.59px;
+	color: rgba(22, 22, 22, 1);
+	margin-bottom: 3px;
+}
+h6{
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 21.86px;
+	margin-bottom: 8px;
+	color: rgba(22, 22, 22, 1);
+}
+.btn{
+	padding: 12px 24px;
+	background-color: var(--main-color);
+	color: rgba(255, 255, 255, 1);
+	font-weight: 500;
+	line-height: 24px;
+	border-radius: 12px;
+	transition: all 0.3s ease-out;
+}
+.btn:hover{
+	background-color: rgba(112, 172, 57, 1);
+}
+
+@media (max-width: 1000px){
+	.main{
+		margin-top: -125px;
+	}
+}
+@media (max-width: 925px){
+	h2{
+		font-size: 50px;
+		line-height: 67.92px;
+	}
+}
+@media (max-width: 755px){
+	h2{
+		font-size: 32px;
+		line-height: 45.28px;
+	}
+	h3{
+		font-size: 20px;
+		line-height: 28.8px;
+		margin-bottom: 12px;
+	}
+}

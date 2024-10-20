@@ -1,0 +1,112 @@
+.products{
+    padding: 90px 0;
+    overflow: hidden;
+}
+.products-swiper{
+    width: 100%;
+    position: relative;
+    padding-bottom: 60px;
+}
+.slider{
+    display: flex;
+    background-color:rgba(78, 124, 35, 1);
+    color: #ffffff;
+    border-radius: 20px;
+    position: relative;
+}
+.leave{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    
+}
+.slider-content{
+    padding: 50px;
+    width: 50%;
+}
+.slider-content h3{
+    font-size: 32px;
+    line-height: 45.28px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 0;
+}
+.slider-content h5{
+    color: rgba(255, 255, 255, 1);
+    margin-top: 14px;
+}
+.nested-slider{
+    width: 50%;
+    position: relative;
+}
+.nested-slider img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    vertical-align: bottom;
+}
+.swiper-pagination{
+    bottom: 0;
+}
+.swiper-button-prev,
+.swiper-button-next{
+    top: var(--swiper-navigation-top-offset, 98%);
+    bottom: 0;
+    width: 56px;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after{
+    display: none;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: calc(50% - 45px);
+    transform: translateX(-50%);
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev{
+    right: calc(50% - 45px);
+    transform: translateX(50%);
+}
+.imgs-swiper .swiper-button-prev,
+.imgs-swiper .swiper-button-next{
+    top: 50%;
+    transform: translateY(-50%);
+}
+.nested-slider .swiper-button-prev,
+.nested-slider .swiper-button-next{
+    top: 50%;
+    transform: translateY(-50%);
+}
+.nested-slider .swiper-button-prev, .nested-slider .swiper-rtl .swiper-button-next{
+    left: 5px;
+}
+.nested-slider .swiper-button-next, .nested-slider .swiper-rtl .swiper-button-prev{
+    right: 5px;
+}
+.swiper-pagination-bullet{
+    background-color: rgba(255, 255, 255, 1);
+    opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    background-color: rgba(145, 182, 111, 1);
+}
+
+@media (max-width: 900px){
+    .slider{
+        flex-direction: column;
+    }
+    .nested-slider{
+        width: 100%;
+    }
+    .slider-content{
+        width: 100%;
+    }
+}
+
+@media (max-width: 755px){
+    .products{
+        padding: 60px 0;
+    }
+    .slider-content{
+        padding: 24px;
+    }
+}

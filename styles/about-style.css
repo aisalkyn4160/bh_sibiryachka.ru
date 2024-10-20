@@ -1,0 +1,68 @@
+.about{
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+}
+.about .decor{
+    display: none;
+}
+.about .leave-decor{
+    display: none;
+}
+.about-text{
+    max-width: 690px;
+    min-width: 400px;
+}
+.about-text p{
+    padding-top: 15px;
+}
+.about-list{
+    width: 445px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.about-list li{
+    width: 289px;
+}
+.about-list li:nth-child(odd){
+    align-self: flex-end;
+}
+.about-list h2{
+    white-space: nowrap;
+}
+
+@media (max-width: 800px){
+    .about{
+        flex-wrap: wrap;
+        position: relative;
+    }
+    .about .decor{
+        display: block;
+        position: absolute;
+        top: -70px;
+        right: 0;
+    }
+    .about .leave-decor{
+        position: absolute;
+        display: block;
+        bottom: 67px;
+        right: 15px;
+    }
+    .about-text{
+        max-width: 100%;
+        min-width: 100%;
+    }
+    .about-list h2{
+        font-size: 50px;
+        line-height: 81px;
+    }
+}
+@media (max-width: 500px){
+    .about{
+        gap: 20px;
+    }
+    .about-list li{
+        width: 100%;
+    }
+}

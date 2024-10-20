@@ -1,0 +1,109 @@
+.footer{
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer-top{
+    display: flex;
+    gap: 93px;
+    padding: 80px 0 24px;
+}
+.footer .logo{
+    width: 314px;
+    margin-bottom: 20px;
+}
+.footer-link{
+    border-bottom: 1px dashed rgba(255, 255, 255, 1);
+    padding-bottom: 3px;
+}
+.footer-contacts{
+    display: flex;
+    justify-content: space-between;
+    gap: 43px;
+}
+.footer .contacts-list li{
+    margin-top: 16px;
+    align-items: flex-start;
+}
+.footer .contacts-list span,
+.footer .contacts-list a{
+    padding-top: 10px;
+}
+.footer .mail{
+    border-bottom: 1px dashed rgba(255, 255, 255, 1);
+    padding-bottom: 1px;
+}
+.footer .menu-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 25px;
+    column-gap: 60px;
+    row-gap: 6px;
+}
+.footer-bottom{
+    padding: 39px 0;
+    border-top: 1px solid rgba(155, 155, 155, 0.17);
+}
+.footer-bottom .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    color:rgba(255, 255, 255, 1);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.developer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.developer p{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.developer a{
+    white-space: nowrap;
+}
+.copyright span{
+    display: block;
+}
+
+@media (max-width: 950px){
+    .footer-top{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .footer-logo{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* gap: 20px; */
+    }
+}
+@media (max-width: 700px){
+    .footer-top{
+        gap: 20px;
+    }
+    .footer-contacts{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer-top .contacts-list{
+        max-width: 100%;
+    }
+    .footer .menu-list{
+        grid-template-columns: 100px 100px;
+        column-gap: 20px;
+        justify-content: flex-start;
+    }
+    .footer-bottom{
+        padding: 29px 0;
+    }
+    .footer-bottom .container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
