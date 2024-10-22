@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
 @import url('header-style.css');
 @import url('contacts-style.css');
 @import url('about-style.css');
@@ -5,7 +7,6 @@
 @import url('benefits-style.css');
 @import url('news-style.css');
 @import url('faq-styles.css');
-@import url('feedback-style.css');
 @import url('address-style.css');
 @import url('footer-style.css');
 /* -------------------------------------------reset-styles------------------------------------------- */
