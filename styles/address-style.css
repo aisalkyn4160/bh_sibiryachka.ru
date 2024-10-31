@@ -1,3 +1,7 @@
+.map-section{
+    background-repeat: no-repeat;
+    background-position: center 90px;
+}
 .address{
     padding: 90px 0 26px;
 }
@@ -24,6 +28,9 @@
     }
 }
 @media (max-width: 600px){
+    .address{
+        padding-top: 60px;
+    }
     .address-wrapper{
         grid-template-columns: 1fr;
     }
